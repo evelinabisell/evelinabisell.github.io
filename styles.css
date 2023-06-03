@@ -274,44 +274,42 @@ input[type=submit]:hover {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  right: 0;
+  max-width: 41rem;
   text-align: right;
   padding-right: 1em;
   font-size: 90%;
 }
 
 .footer-container {
-  background: rgba(40, 40, 40, 0.6);
+  background: rgba(40, 40, 40, 0.4);
   display: inline-block;
   padding: 0.5em 2em;
-}
-
-footer details {
-  display: inline;
-  font-weight: 200;
-}
-
-summary {
-  cursor: pointer;
-}
-
-footer details p {
-  display: block;
 }
 
 footer h4 {
   display: inline;
   font-weight: 200;
+  vertical-align: top;
 }
 
-footer a {
-  text-decoration: none;
-  color: inherit;
+details {
+  display: inline;
   font-weight: 200;
 }
 
-footer a:hover {
-  text-decoration: underline;
+details summary {
+  display: inline;
+  cursor: pointer;
+  transition: margin 150ms ease-out;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+details > p {
+  display: block;
 }
 
 /* Medium devices */

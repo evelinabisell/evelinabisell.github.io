@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Evelina Bisell | Home</title>
+  <meta name="description" content="Evelina Bisell's online resume & portfolio">
+  <meta name="author" content="Evelina Bisell">
+  <meta name="generator" content="Visual Studio Code">
+  <meta name="keywords" content="Evelina Bisell, resume, portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css?rnd=12345">
+</head>
+
+<body>
+
+  <header>
+    <h1>Evelina Bisell | Home</h1>
+    <nav>
+      <a href="history.html">History</a>
+      <a href="now.html">Now</a>
+      <a href="future.html">Future</a>
+    </nav>
+  </header>
+
+  <main id="welcome">
+    <section>
+      <h2>Hello, and welcome to my site!</h2>
+      <p>I appreciate you going out of your way to come visit here today. 
+        This site is my personal display, and I hope you enjoy your stay.</p>
+      <p>You can look through the links above to find out more about my past, present and future.</p>
+    </section>
+  </main>
+
+  <form action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="post" enctype="multipart/form-data">
+    <h2>Contact me!</h2>
+    <p>All fields marked with * are required</p>
+    <fieldset>
+      <legend>
+        Your info
+      </legend>
+      <label>
+        Name *:
+        <input type="text" name="name" size="30" maxlength="100" placeholder="Jane Doe" 
+               title="Enter your name or what you're called." required autofocus>
+      </label>
+      <br>
+      <label>
+        Email *:
+        <input type="email" name="email" size="30" maxlength="100" placeholder="jane.doe@gmail.com" 
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter a valid e-mail address, xxx@xxx.xxx" required>
+      </label>
+      <br>
+      <label>
+        Website (LinkedIn, Facebook, etc.):
+        <input type="url" name="website" size="30" maxlength="1000" placeholder="https://www.linkedin.com/in/jane-doe/"
+               title="Optional: Enter a URL to a page that belongs to you.">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Options
+      </legend>
+      <label>
+        Do you want a reply?
+        <input type="checkbox" name="reply">
+      </label>
+      <br>
+      <label>
+        Recieve copy
+        <input type="radio" name="copy" value="yes">
+      </label>
+      <label>
+        Don't recieve copy
+        <input type="radio" name="copy" value="no">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Message
+      </legend>
+      <label>
+        Message type:
+        <select title="Choose what type of message you're sending.">
+          <option value="info">Info</option>
+          <option value="request">Request</option>
+          <option value="offer">Offer</option>
+          <option value="social">Social</option>
+        </select>
+      </label>
+      <br>
+      <label>Subject *:
+      <input list="subjects" name="subject" title="Subject of message." required>
+        <datalist id="subjects">
+          <option value="Hello!">
+          <option value="Job offer">
+          <option value="Let's collab!">
+          <option value="We've got a problem.">
+          <option value="How you doin?">
+        </datalist>
+      </label>   
+      <br>
+      <label>
+        Message *:
+        <br>
+        <textarea name="message" rows="4" cols="50" maxlength="10000" placeholder="Write your message here..." 
+        title="Write your message here." required></textarea>
+      </label>
+      <br>
+      <label>
+        Attach file:
+        <input type="file" name="file" title="Optional: Attach an image or file to your message.">
+      </label>
+    </fieldset>
+    <input type="submit">
+  </form>
+  
+  <aside id="mediaDisplay">
+    <p>Here's a little <a href="videoPlayer.html">video</a> I filmed the other day, and a little tune I made in GarageBand over 10 years ago, to welcome you! :3</p>
+    <video width="198" height="350" controls>
+      <source src="Video/dog_walk_in_snow.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <audio controls>
+      <source src="Audio/New_love.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </aside>
+
+  <aside id="asciiCat">
+    <figure>
+      <pre role="img" aria-label="ASCII CAT">
+        ／l、
+      （ﾟ､ ｡ ７
+        l  ~ヽ
+        じしf_,)ノ
+      </pre>
+      <figcaption id="cat-caption">
+        A cute cat illustrated using preformatted text characters.
+      </figcaption>
+    </figure>
+  </aside>
+
+  <footer>
+    <h4><a href="mailto:evelina.bisell@gmail.com"> Evelina Bisell</a> &copy; 2023 - ALL RIGHTS RESERVED - </h4>
+    <details>
+      <summary>CREDITS</summary>
+      <p>Designed and developed by Evelina Bisell using: Visual Studio Code to write HTML and CSS, 
+        XXX to write JavaScript/JQuery, and maybe Figma for design. <br> 
+        Special thanks to Pierre A.I. Wijkman, course manager for the Stockholm University course 
+        where the development of this site got its start.</p>
+    </details>
+  </footer>
+
+</body>
+
+</html>

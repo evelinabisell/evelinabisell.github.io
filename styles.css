@@ -215,13 +215,6 @@ textarea {
   resize: none;
 }
 
-input:focus,
-textarea:focus {
-  outline: none;
-  caret-color: white;
-  background-color: rgba(40, 40, 40, 0.5);
-}
-
 input,
 textarea {
   background-color: rgba(35, 35, 35, 0.2);
@@ -231,6 +224,22 @@ textarea {
   margin-bottom: 1em;
   font: 300 100% OpenSans, Arial, sans-serif;
   color: white;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  caret-color: white;
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 0.2) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 input[type=url] {

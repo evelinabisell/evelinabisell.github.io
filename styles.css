@@ -124,6 +124,26 @@ nav a {
   letter-spacing: 0.2em;
 }
 
+#resume {
+  width: 5rem;
+  height: 1.8rem;
+  border: #2f2f2f 1px solid;
+  outline: none;
+  background: #0d0d0d;
+  color: #e5e5e5;
+  font: 200 80% OpenSans, sans-serif;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+
+  transition-property: background;
+  transition-duration: 0.5s;
+}
+
+#resume:hover {
+  background: #353535;
+}
+
 /* sections */
 #quote {
   text-align: center;

@@ -31,64 +31,29 @@
         Your info
       </legend>
       <label>
-        Name *:
-        <input type="text" name="name" size="30" maxlength="100" placeholder="Jane Doe" 
-               title="Enter your name or what you're called." required autofocus>
+        Name:
+        <input type="text" name="name" size="30" maxlength="100" 
+               title="Enter your name or what you're called." autofocus>
       </label>
       <br>
       <label>
         Email *:
-        <input type="email" name="email" size="30" maxlength="100" placeholder="jane.doe@gmail.com" 
+        <input type="email" name="email" size="30" maxlength="100"
                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter a valid e-mail address, xxx@xxx.xxx" required>
       </label>
       <br>
       <label>
         Website (LinkedIn, Facebook, etc.):
-        <input type="url" name="website" size="30" maxlength="1000" placeholder="https://www.linkedin.com/in/jane-doe/"
+        <input type="url" name="website" size="30" maxlength="1000" placeholder="https://www.linkedin.com/in/..."
                title="Optional: Enter a URL to a page that belongs to you.">
-      </label>
-    </fieldset>
-    <fieldset>
-      <legend>
-        Options
-      </legend>
-      <label>
-        Do you want a reply?
-        <input type="checkbox" name="reply">
-      </label>
-      <br>
-      <label>
-        Recieve copy
-        <input type="radio" name="copy" value="yes">
-      </label>
-      <label>
-        Don't recieve copy
-        <input type="radio" name="copy" value="no">
       </label>
     </fieldset>
     <fieldset>
       <legend>
         Message
       </legend>
-      <label>
-        Message type:
-        <select title="Choose what type of message you're sending.">
-          <option value="info">Info</option>
-          <option value="request">Request</option>
-          <option value="offer">Offer</option>
-          <option value="social">Social</option>
-        </select>
-      </label>
-      <br>
-      <label>Subject *:
-      <input list="subjects" name="subject" title="Subject of message." required>
-        <datalist id="subjects">
-          <option value="Hello!">
-          <option value="Job offer">
-          <option value="Let's collab!">
-          <option value="We've got a problem.">
-          <option value="How you doin?">
-        </datalist>
+      <label>Subject:
+      <input type="text" name="subject" title="Subject of message.">
       </label>   
       <br>
       <label>
@@ -102,15 +67,25 @@
         Attach file:
         <input type="file" name="file" title="Optional: Attach an image or file to your message.">
       </label>
+      <br>
+      <label id="extra-label">Recieve copy?</label>
+      <label>
+        Yes
+        <input type="radio" name="copy" value="yes">
+      </label>
+      <label>
+        No
+        <input type="radio" name="copy" value="no" checked>
+      </label>
     </fieldset>
-    <input type="submit">
+    <input type="submit" value="Send">
   </form>
 
   <footer>
     <h4><a href="mailto:evelina.bisell@gmail.com"> Evelina Bisell</a> &copy; 2023 - ALL RIGHTS RESERVED - </h4>
     <details>
       <summary>CREDITS</summary>
-      <p>Designed and developed by Evelina Bisell using: Visual Studio Code to write HTML, CSS and JavaScript<br> 
+      <p id="credits">Designed and developed by Evelina Bisell using: Visual Studio Code to write HTML, CSS and JavaScript<br> 
         Special thanks to Pierre A.I. Wijkman, course manager for the Stockholm University course 
         where the development of this site got its start.</p>
     </details>

@@ -10,6 +10,7 @@
   <meta name="keywords" content="Evelina Bisell, resume, portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script src="script.js"></script>
 </head>
 
@@ -25,7 +26,7 @@
 
   <form action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="post" enctype="multipart/form-data">
     <h2>Contact me!</h2>
-    <p>All fields marked with * are required</p>
+    <p>Fields marked with * are required</p>
     <fieldset>
       <legend>
         Your info
@@ -43,7 +44,7 @@
       </label>
       <br>
       <label>
-        Website (LinkedIn, Facebook, etc.):
+        Website:
         <input type="url" name="website" size="30" maxlength="1000" placeholder="https://www.linkedin.com/in/..."
                title="Optional: Enter a URL to a page that belongs to you.">
       </label>
@@ -63,8 +64,8 @@
         title="Write your message here." required></textarea>
       </label>
       <br>
-      <label>
-        Attach file:
+      <label id="attach-file">
+        Attach file <span class="material-symbols-outlined">attach_file</span>
         <input type="file" name="file" title="Optional: Attach an image or file to your message.">
       </label>
       <br>
@@ -82,13 +83,15 @@
   </form>
 
   <footer>
-    <h4><a href="mailto:evelina.bisell@gmail.com"> Evelina Bisell</a> &copy; 2023 - ALL RIGHTS RESERVED - </h4>
-    <details>
-      <summary>CREDITS</summary>
-      <p id="credits">Designed and developed by Evelina Bisell using: Visual Studio Code to write HTML, CSS and JavaScript<br> 
-        Special thanks to Pierre A.I. Wijkman, course manager for the Stockholm University course 
-        where the development of this site got its start.</p>
-    </details>
+    <div class="footer-container">
+      <h4><a href="mailto:evelina.bisell@gmail.com"> Evelina Bisell</a> &copy; 2023 - ALL RIGHTS RESERVED - </h4>
+      <details>
+        <summary>CREDITS</summary>
+        <p id="credits">Designed and developed by Evelina Bisell using: Visual Studio Code to write HTML, CSS and JavaScript<br>
+          Special thanks to Pierre A.I. Wijkman, course manager for the Stockholm University course
+          where the development of this site got its start.</p>
+      </details>
+    </div>
   </footer>
 
 </body>

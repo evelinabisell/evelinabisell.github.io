@@ -25,7 +25,7 @@ body {
 
   font-family: OpenSans, Arial, sans-serif;
   font-weight: 300;
-  color: #f0f0f0;
+  color: #e5e5e5;
 
   font-size: 80%;
 }
@@ -43,7 +43,7 @@ p {
 
 h1 {
   margin: 0;
-  font-size: 350%;
+  font-size: 400%;
 }
 
 h2 {
@@ -100,7 +100,6 @@ ul {
 
 /* header and nav bar */
 header {
-  background: rgba(20, 20, 20, 0.5);
   text-align: center;
   font-family: Caveat, sans-serif;
   font-size: 130%;
@@ -121,24 +120,33 @@ nav a {
 /* sections */
 #quote {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
   font-family: Caveat;
   font-weight: 200;
   font-size: 130%;
+  color: #dadada;
 }
 
 /* form */
-form {
-  background-color: rgba(35, 35, 35, 0.5);
-  margin: 1em;
+form {  
+  max-width: 50rem;
+  margin: auto;
+  background-color: rgba(35, 35, 35, 0.2);
+  border-bottom: rgb(26, 61, 77) 2px solid;
+  border-left:rgb(26, 61, 77) 2px solid;
+  border-bottom-left-radius: 2em;
   padding-inline: 1em;
   font-weight: 200;
   font-size: 90%;
+  color: #bebebe;
 }
 
 form h2 {
   padding-top: 0.8em;
   padding-bottom: 0.3em;
+  font-weight: 200;
+  font-size: 150%;
+  color: #e6e6e6;
 }
 
 form p {
@@ -152,6 +160,7 @@ form p {
 
 fieldset {
   padding: 1em;
+  border:#363636 1px solid;
 }
 
 legend {
@@ -176,36 +185,40 @@ textarea {
   background-color: rgba(35, 35, 35, 0.2);
   box-shadow: none;
   border: none;
-  border-bottom: 1.5px solid rgb(194, 194, 194);
+  border-bottom: 1px solid rgba(190, 190, 190, 0.5);
   margin-bottom: 1em;
   font: 300 100% OpenSans, Arial, sans-serif;
   color: white;
 }
 
 input[type=url] {
-  background-image: url(Images/website_icon.png);
-  background-size: 1em;
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 1.3em;
   width: 60%;
 }
 
 input[type=file] {
-  border: none;
-  background-color: transparent;
+  visibility: hidden;
+}
+
+#attach-file {
+  font-style: italic;
+}
+
+#attach-file:hover {
+  color: #efefef;
+}
+
+.material-symbols-outlined {
+  font-size: 1.6em !important;
+  vertical-align: -0.15em;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 40
 }
 
 input[type=radio] {
   background-color: rgb(35, 35, 35);
-}
-
-input::file-selector-button {
-  background: #2f2f2f;
-  color: rgb(255, 255, 255);
-  padding: 0.5em;
-  border: none;
-  border-radius: 5em;
 }
 
 input[type='radio']:after {
@@ -231,8 +244,9 @@ input[type=submit] {
   border: none;
   outline: none;
   background: #2f2f2f;
-  color: #fff;
-  font: 200 130% OpenSans, sans-serif;
+  color: #dadada;
+  font-weight: 200;
+  font-size: 130%;
   border-radius: 40px;
   text-align: center;
   box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
@@ -255,7 +269,7 @@ footer {
   bottom: 0;
   width: 100%;
   background: rgba(40, 40, 40, 0.6);
-  font-weight: bold;
+  font-weight: 200;
   text-align: center;
   padding: 0.5em;
 }

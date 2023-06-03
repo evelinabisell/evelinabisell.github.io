@@ -9,6 +9,11 @@
   src: url('Fonts/Caveat/Caveat-VariableFont_wght.ttf');
 }
 
+@font-face {
+  font-family: 'DosisExtraBold';
+  src: url('Fonts/Dosis/static/Dosis-ExtraBold.ttf');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,7 +47,9 @@ p {
 }
 
 h1 {
+  font-family: DosisExtraBold, sans-serif;
   margin: 0;
+  font-weight: 900;
   font-size: 400%;
 }
 
@@ -313,6 +320,10 @@ footer a:hover {
   body {
     font-size: 90%;
   }
+
+  h1 {
+    font-size: 500%;
+  }
   
 }
 
@@ -321,5 +332,9 @@ footer a:hover {
 
   main {
     font-size: 110%;
+  }
+
+  h1 {
+    font-size: 600%;
   }
 }

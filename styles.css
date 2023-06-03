@@ -9,71 +9,89 @@
   src: url('Fonts/Caveat/Caveat-VariableFont_wght.ttf');
 }
 
+/* animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  background: rgb(26,61,77);
-  background: linear-gradient(0deg, rgba(26,61,77,1) 0%, rgba(0,0,0,1) 100%);
-  
+  background: rgb(26, 61, 77);
+  background: linear-gradient(0deg, rgba(26, 61, 77, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background-attachment: fixed;
+
   font-family: OpenSans, Arial, sans-serif;
   font-weight: 300;
   color: #f0f0f0;
   font-size: 90%;
 }
 
-/* animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* text */
 p {
   padding-left: 1.5em;
 }
+
 h1 {
   animation: fadeIn 1s ease-out 0s 1;
 }
+
 h2 {
   padding-left: 0.5em;
   font: 400 140% OpenSans, sans-serif;
   letter-spacing: 0.05em;
 }
+
 h3 {
   padding-left: 0.5em;
   font: 400 110% OpenSans, sans-serif;
 }
+
 a:link {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
   box-shadow: inset 0 0 0 0 #d9d7d79f;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   cursor: url(Cursors/pointer_cursor.cur), auto;
-} 
+}
+
 a:visited {
-  color:rgb(150, 150, 150);
-} 
+  color: rgb(150, 150, 150);
+}
+
 a:hover {
   box-shadow: inset 110px 0 0 0 #d9d7d79f;
   color: rgb(0, 0, 0);
 }
+
 a:active {
   box-shadow: inset 110px 0 0 0 #ffffff;
   color: #f0f0f0;
 }
+
 mark {
   background: linear-gradient(-100deg, hsla(280, 92%, 75%, 0.254), hsla(279, 92%, 75%, 0.508) 95%, hsla(274, 92%, 75%, 0.051));
   border-radius: 1em 0;
   color: inherit;
 }
+
 ol {
   list-style: none;
 }
+
 ul {
   list-style: square inside;
 }
@@ -85,12 +103,14 @@ header {
   font-family: Caveat, sans-serif;
   font-size: 130%;
 }
+
 nav {
   background: rgba(33, 33, 33, 0.5);
   padding: 0.3em;
   text-align: right;
   margin-top: 2em;
 }
+
 nav a {
   padding-left: 1em;
   padding-right: 1em;
@@ -105,11 +125,13 @@ nav a {
   font-weight: 200;
   font-size: 170%;
 }
+
 aside {
   padding: 0.5em;
   font-size: 90%;
   font-weight: 300;
 }
+
 figure:hover {
   transform: scale(1.1);
 }
@@ -122,32 +144,43 @@ form {
   font-weight: 200;
   font-size: 90%;
 }
+
 form h2 {
   font: 300 130% OpenSans, Arial, sans-serif;
   margin-bottom: 0.5em;
 }
+
 form p {
   padding-left: 0.5em;
   margin: 0.5em;
   font-size: 80%;
   font-style: italic;
 }
+
 fieldset {
   padding: 1em;
 }
+
 legend {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
 textarea {
   resize: none;
 }
-input:focus, textarea:focus, select:focus{
+
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   caret-color: white;
   background-color: rgb(40, 40, 40);
 }
-input, textarea, select {
+
+input,
+textarea,
+select {
   background-color: rgb(35, 35, 35);
   box-shadow: none;
   border: none;
@@ -156,6 +189,7 @@ input, textarea, select {
   font: 300 100% OpenSans, Arial, sans-serif;
   color: white;
 }
+
 input[type=url] {
   background-image: url(Images/website_icon.png);
   background-size: 1em;
@@ -164,12 +198,16 @@ input[type=url] {
   padding-left: 1.3em;
   width: 60%;
 }
+
 input[type=file] {
   border: none;
 }
-input[type=radio]:checked, input[type=checkbox]:checked {
+
+input[type=radio]:checked,
+input[type=checkbox]:checked {
   accent-color: #b8b8b8;
 }
+
 input[type=submit] {
   width: 130px;
   height: 40px;
@@ -180,7 +218,7 @@ input[type=submit] {
   font: 200 120% OpenSans, sans-serif;
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -189,6 +227,7 @@ input[type=submit] {
   transition-property: background;
   transition-duration: 1s;
 }
+
 input[type=submit]:hover {
   background: #b8b8b8;
 }
@@ -200,12 +239,15 @@ footer {
   text-align: center;
   padding: 0.5em;
 }
+
 footer details {
   display: inline;
 }
+
 footer h4 {
   display: inline;
 }
+
 footer a {
   text-decoration: underline;
 }

@@ -268,23 +268,39 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  text-align: right;
+  padding-right: 1em;
+  font-size: 90%;
+}
+
+.footer-container {
   background: rgba(40, 40, 40, 0.6);
-  font-weight: 200;
-  text-align: center;
-  padding: 0.5em;
+  display: inline-block;
+  padding: 0.5em 2em;
 }
 
 footer details {
   display: inline;
+  font-weight: 200;
+}
+
+summary {
+  cursor: pointer;
+}
+
+footer details p {
+  display: block;
 }
 
 footer h4 {
   display: inline;
+  font-weight: 200;
 }
 
 footer a {
   text-decoration: none;
   color: inherit;
+  font-weight: 200;
 }
 
 footer a:hover {

@@ -5,12 +5,12 @@ $(document).ready(function () {
         $("#languagePopup").fadeIn();
     });
 
-    // Show English PDF file in new tab on English button click
+    // Show English PDF file in a new tab on English button click
     $("#english-button").on("click", function () {
         window.open("https://evelinabisell.github.io/Resumes/CV_Resume_Eng_June_2023.pdf");
     });
 
-    // Show Swedish PDF file in new tab on Swedish button click
+    // Show Swedish PDF file in a new tab on Swedish button click
     $("#swedish-button").on("click", function () {
         window.open("https://evelinabisell.github.io/Resumes/CV_Sve_June_2023.pdf");
     });

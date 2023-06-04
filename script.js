@@ -7,12 +7,12 @@ $(document).ready(function () {
 
     // Show English PDF file in new tab on English button click
     $("#english-button").on("click", function () {
-        window.open("Resumes/CV_Resume_Eng _June_2023.pdf");
+        window.open("https://evelinabisell.github.io/Resumes/CV_Resume_Eng_June_2023.pdf");
     });
 
     // Show Swedish PDF file in new tab on Swedish button click
     $("#swedish-button").on("click", function () {
-        window.open("Resumes/CV_Sve_Apr_2023.pdf");
+        window.open("https://evelinabisell.github.io/Resumes/CV_Sve_Apr_2023.pdf");
     });
 
     // Close the popup when user clicks outside the content area

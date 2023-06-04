@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     // Show Swedish PDF file in new tab on Swedish button click
     $("#swedish-button").on("click", function () {
-        window.open("https://evelinabisell.github.io/Resumes/CV_Sve_Apr_2023.pdf");
+        window.open("https://evelinabisell.github.io/Resumes/CV_Sve_June_2023.pdf");
     });
 
     // Close the popup when user clicks outside the content area

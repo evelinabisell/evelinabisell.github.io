@@ -18,7 +18,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -33,6 +38,10 @@ body {
   color: #e5e5e5;
 
   font-size: 80%;
+}
+
+.screen {
+  height: 100%;
 }
 
 main {
@@ -131,6 +140,12 @@ nav > a:active {
   background: #353535;
 }
 
+#home-icon {
+  width: 1.5rem;
+  position: relative;
+  bottom: -0.5em;
+}
+
 /* sections */
 #quote {
   text-align: center;
@@ -171,6 +186,7 @@ form {
   width: 80%;
   max-width: 50rem;
   margin: auto;
+  margin-top: 2rem;
   background-color: rgba(35, 35, 35, 0.2);
   border-bottom: rgb(26, 61, 77) 2px solid;
   border-left:rgb(26, 61, 77) 2px solid;
@@ -313,6 +329,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background: #505050;
+}
+
+.bottom-padding {
+  height: 2rem;
 }
 
 /* language selection popup */

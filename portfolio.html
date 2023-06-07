@@ -16,43 +16,46 @@
 
 <body>
 
+  <a id="start"></a>
   <div class="screen">
-    <header>
-      <nav>
-        <a href="home.html"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="#contact">Contact</a>
-        <button id="resume">Resume</button>
-      </nav>
-    </header>
+    
+      <header>
+        <nav>
+          <a href="home.html#start"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
+          <a href="portfolio.html#start">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <button id="resume">Resume</button>
+        </nav>
+      </header>
 
-    <main id="current">
-      <section>
-        <h2>What I'm up to right now</h2>
-        <article>
-          <h3>Current occupation</h3>
-          <p>Right now I'm living in South Korea on a Working Holiday Visa
-            while looking for work and studying programming online.</p>
-        </article>
-        <article>
-          <h3>Current side project</h3>
-          <p>I'm working on a prototype for a game in Unity.</p>
-        </article>
-      </section>
+      <main id="current">
+        <section>
+          <h2>What I'm up to right now</h2>
+          <article>
+            <h3>Current occupation</h3>
+            <p>Right now I'm living in South Korea on a Working Holiday Visa
+              while looking for work and studying programming online.</p>
+          </article>
+          <article>
+            <h3>Current side project</h3>
+            <p>I'm working on a prototype for a game in Unity.</p>
+          </article>
+        </section>
 
-      <div id="portfolio">
+        <div id="portfolio">
 
-      </div>
+        </div>
 
-      <div id="social-media-bar">
-        <a href="https://www.linkedin.com/in/evelina-bisell/">
-          <img src="Images/In-White-128@2x.png">
-        </a>
-        <a href="https://github.com/evelinabisell">
-          <img src="Images/github-mark-white.png">
-        </a>
-      </div>
-    </main>
+        <div id="social-media-bar">
+          <a href="https://www.linkedin.com/in/evelina-bisell/">
+            <img src="Images/In-White-128@2x.png">
+          </a>
+          <a href="https://github.com/evelinabisell">
+            <img src="Images/github-mark-white.png">
+          </a>
+        </div>
+      </main>
+    
   </div>
 
   <div class="popup-overlay" id="languagePopup">
@@ -65,16 +68,15 @@
 
   <a id="contact">
     <form id="mail-form" action="" method="post">
-      <h2>Get in touch!</h2>
+      <h2>Contact me</h2>
       <fieldset>
         <input type="text" id="name" name="name" size="30" maxlength="100" placeholder="Name"
           title="Enter your name or what you're called." autofocus>
         <br>
         <input type="email" id="email" name="email" size="30" maxlength="100" placeholder="Email"
           title="Enter a valid e-mail address" required>
-        <textarea id="message" name="message" maxlength="10000" placeholder="How can I help?"
-          title="Write your message here." required>
-      </textarea>
+        <textarea id="message" name="message" maxlength="10000" placeholder="Message"
+          title="Write your message here." required></textarea>
       </fieldset>
       <input type="submit" value="Send">
     </form>

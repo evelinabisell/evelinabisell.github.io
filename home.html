@@ -17,11 +17,12 @@
 
 <body>
 
+  <a id="start"></a>
   <div class="screen">
     <header>
       <nav>
-        <a href="home.html"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
-        <a href="portfolio.html">Portfolio</a>
+        <a href="home.html#start"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
+        <a href="portfolio.html#start">Portfolio</a>
         <a href="#contact">Contact</a>
         <button id="resume">Resume</button>
       </nav>
@@ -63,16 +64,15 @@
 
   <a id="contact">
     <form id="mail-form" action="" method="post">
-      <h2>Get in touch!</h2>
+      <h2>Contact me</h2>
       <fieldset>
         <input type="text" id="name" name="name" size="30" maxlength="100" placeholder="Name"
           title="Enter your name or what you're called." autofocus>
         <br>
         <input type="email" id="email" name="email" size="30" maxlength="100" placeholder="Email"
           title="Enter a valid e-mail address" required>
-        <textarea id="message" name="message" maxlength="10000" placeholder="How can I help?"
-          title="Write your message here." required>
-      </textarea>
+        <textarea id="message" name="message" maxlength="10000" placeholder="Message"
+          title="Write your message here." required></textarea>
       </fieldset>
       <input type="submit" value="Send">
     </form>

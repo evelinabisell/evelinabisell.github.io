@@ -164,7 +164,7 @@ form {
   max-width: 40rem;
   margin: auto;
   margin-top: 2rem;
-  background-color: rgba(35, 35, 35, 0.8);
+  background-color: rgba(35, 35, 35, 0.5);
   border-bottom: rgb(26, 61, 77) 2px solid;
   border-left:rgb(26, 61, 77) 2px solid;
   border-bottom-left-radius: 2em;

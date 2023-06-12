@@ -16,19 +16,20 @@
 
 <body>
 
-  <a id="start"></a>
   <div class="screen">
-    
-      <header>
-        <nav>
-          <a href="home.html#start"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
-          <a href="portfolio.html#start">Portfolio</a>
-          <a href="#contact">Contact</a>
-          <button id="resume">Resume</button>
-        </nav>
-      </header>
 
-      <main id="current">
+    <a id="start"></a>
+    <header>
+      <nav>
+        <a href="home.html#start"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
+        <a href="portfolio.html#start">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <button id="resume">Resume</button>
+      </nav>
+    </header>
+
+    <div class="content">
+      <main>
         <section>
           <h2>What I'm up to right now</h2>
           <article>
@@ -45,17 +46,17 @@
         <div id="portfolio">
 
         </div>
-
-        <div id="social-media-bar">
-          <a href="https://www.linkedin.com/in/evelina-bisell/">
-            <img src="Images/In-White-128@2x.png">
-          </a>
-          <a href="https://github.com/evelinabisell">
-            <img src="Images/github-mark-white.png">
-          </a>
-        </div>
       </main>
-    
+
+      <div id="social-media-bar">
+        <a href="https://www.linkedin.com/in/evelina-bisell/">
+          <img src="Images/In-White-128@2x.png">
+        </a>
+        <a href="https://github.com/evelinabisell">
+          <img src="Images/github-mark-white.png">
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="popup-overlay" id="languagePopup">
@@ -75,8 +76,8 @@
         <br>
         <input type="email" id="email" name="email" size="30" maxlength="100" placeholder="Email"
           title="Enter a valid e-mail address" required>
-        <textarea id="message" name="message" maxlength="10000" placeholder="Message"
-          title="Write your message here." required></textarea>
+        <textarea id="message" name="message" maxlength="10000" placeholder="Message" title="Write your message here."
+          required></textarea>
       </fieldset>
       <input type="submit" value="Send">
     </form>

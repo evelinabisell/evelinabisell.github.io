@@ -17,8 +17,9 @@
 
 <body>
 
-  <a id="start"></a>
   <div class="screen">
+
+    <a id="start"></a>
     <header>
       <nav>
         <a href="home.html#start"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
@@ -28,20 +29,24 @@
       </nav>
     </header>
 
-    <main>
-      <section id="welcome">
-        <p id="mini-text">Hello, my name is</p>
-        <h1>Evelina Bisell.</h1>
-        <p>I'm an aspiring programmer with a background in IT support and a bachelors degree in Computer Science.<br>
-          Welcome to my site :></p>
-      </section>
+    <div class="content">
+      <main>
+        <section id="welcome">
+          <p id="mini-text">Hello, my name is</p>
+          <h1>Evelina Bisell.</h1>
+          <p>I'm an aspiring programmer with a background in IT support and a bachelors degree in Computer and Systems
+            Sciences from Stockholm University.
+            Welcome to my site!<br>
+          </p>
+        </section>
 
-      <section id="quote">
-        <blockquote cite="https://www.goodreads.com/quotes/700564-if-you-are-always-trying-to-be-normal-you-will">
-          “If you are always trying to be normal, you will never know how amazing you can be.” <br> - <i>Maya
-            Angelou</i>
-        </blockquote>
-      </section>
+        <section id="quote">
+          <blockquote cite="https://www.goodreads.com/quotes/700564-if-you-are-always-trying-to-be-normal-you-will">
+            “If you are always trying to be normal, you will never know how amazing you can be.” <br> - <i>Maya
+              Angelou</i>
+          </blockquote>
+        </section>
+      </main>
 
       <div id="social-media-bar">
         <a href="https://www.linkedin.com/in/evelina-bisell/">
@@ -51,7 +56,7 @@
           <img src="Images/github-mark-white.png">
         </a>
       </div>
-    </main>
+    </div>
   </div>
 
   <div class="popup-overlay" id="languagePopup">
@@ -71,8 +76,8 @@
         <br>
         <input type="email" id="email" name="email" size="30" maxlength="100" placeholder="Email"
           title="Enter a valid e-mail address" required>
-        <textarea id="message" name="message" maxlength="10000" placeholder="Message"
-          title="Write your message here." required></textarea>
+        <textarea id="message" name="message" maxlength="10000" placeholder="Message" title="Write your message here."
+          required></textarea>
       </fieldset>
       <input type="submit" value="Send">
     </form>

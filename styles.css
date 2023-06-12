@@ -49,10 +49,10 @@ body {
   height: 100%;
 }
 
-main {
+.content {
   max-width: 75%;
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 1rem;
 }
 
 /* text */
@@ -96,17 +96,18 @@ nav {
 }
 
 nav > a {
-  padding-left: 0.6em;
-  padding-right: 0.6em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   font: 200 80% OpenSans, sans-serif;
-  letter-spacing: 0.2em;
-}
-
-nav > a:link {
-  color: inherit;
+  letter-spacing: 0.3em;
+  color: #e5e5e5;
   text-decoration: none;
   cursor: url(Cursors/pointer_cursor.cur), pointer;
 }
+
+nav > a:visited {
+  color: #bebebe;
+} 
 
 #resume {
   width: 5.2rem;
@@ -140,7 +141,7 @@ nav > a:link {
   text-align: center;
   margin-right: 0;
   margin-left: 6rem;
-  margin-top: 15%;
+  margin-top: 1rem;
   font-family: Caveat;
   font-weight: 200;
   font-size: 130%;
@@ -148,8 +149,8 @@ nav > a:link {
 }
 
 #social-media-bar {
-  position: absolute;
-  bottom: 6rem;
+  position: fixed;
+  bottom: 1rem;
 }
 
 #social-media-bar img {
@@ -163,7 +164,7 @@ form {
   max-width: 40rem;
   margin: auto;
   margin-top: 2rem;
-  background-color: rgba(35, 35, 35, 0.2);
+  background-color: rgba(35, 35, 35, 0.5);
   border-bottom: rgb(26, 61, 77) 2px solid;
   border-left:rgb(26, 61, 77) 2px solid;
   border-bottom-left-radius: 2em;
@@ -174,11 +175,12 @@ form {
 }
 
 form h2 {
-  padding-top: 0.2em;
+  padding-top: 0.5em;
   padding-left: 0.5em;
   font-family: Dosis, OpenSans, sans-serif;
   font-weight: 200;
   font-size: 220%;
+  letter-spacing: 0.05em;
   color: #e6e6e6;
 }
 
@@ -346,7 +348,7 @@ details > p {
 }
 
 /* Medium devices */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 360px) {
 
   body {
     font-size: 90%;
@@ -362,7 +364,7 @@ details > p {
 }
 
 /* Large devices */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (min-height: 500px) {
 
   main {
     font-size: 110%;
@@ -374,5 +376,51 @@ details > p {
 
   #social-media-bar img {
     width: 42px;
+  }
+}
+
+/* Margins for different heights */
+@media only screen and (min-height: 360px) {
+
+  .content {
+    margin-top: 4rem;
+  }
+
+  #quote {
+    margin-top: 2rem;
+  }
+
+  #social-media-bar {
+    bottom: 3rem;
+  }
+}
+
+@media only screen and (min-height: 500px) {
+
+  .content {
+    margin-top: 8rem;
+  }
+
+  #quote {
+    margin-top: 4rem;
+  }
+
+  #social-media-bar {
+    bottom: 4rem;
+  }
+}
+
+@media only screen and (min-height: 700px) {
+
+  .content {
+    margin-top: 8rem;
+  }
+
+  #quote {
+    margin-top: 10rem;
+  }
+
+  #social-media-bar {
+    bottom: 4rem;
   }
 }

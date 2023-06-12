@@ -158,6 +158,19 @@ nav > a:visited {
   width: 32px;
 }
 
+#social-media-bar-portfolio {
+  position: fixed;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#social-media-bar-portfolio img {
+  display: block;
+  margin-top: 0.5em;
+  width: 32px;
+}
+
 /* form */
 form {  
   width: 80%;
@@ -365,6 +378,10 @@ details > p {
   #social-media-bar img {
     width: 38px;
   }
+
+  #social-media-bar-portfolio img {
+    width: 34px;
+  }
 }
 
 /* Large devices */
@@ -380,6 +397,10 @@ details > p {
 
   #social-media-bar img {
     width: 42px;
+  }
+
+  #social-media-bar-portfolio img {
+    width: 38px;
   }
 }
 

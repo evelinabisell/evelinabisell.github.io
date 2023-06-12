@@ -149,8 +149,8 @@ nav > a:visited {
 }
 
 #social-media-bar {
-  position: fixed;
-  bottom: 1rem;
+  position: relative;
+  margin-top: -4rem;
 }
 
 #social-media-bar img {
@@ -164,7 +164,7 @@ form {
   max-width: 40rem;
   margin: auto;
   margin-top: 2rem;
-  background-color: rgba(35, 35, 35, 0.5);
+  background-color: rgba(35, 35, 35, 0.8);
   border-bottom: rgb(26, 61, 77) 2px solid;
   border-left:rgb(26, 61, 77) 2px solid;
   border-bottom-left-radius: 2em;
@@ -176,12 +176,16 @@ form {
 
 form h2 {
   padding-top: 0.5em;
-  padding-left: 0.5em;
-  font-family: Dosis, OpenSans, sans-serif;
+  padding-left: 0.7em;
+  font-family: OpenSans, sans-serif;
   font-weight: 200;
-  font-size: 220%;
+  font-size: 160%;
   letter-spacing: 0.05em;
   color: #e6e6e6;
+}
+
+form p {
+  padding-left: 1em;
 }
 
 fieldset {
@@ -391,7 +395,7 @@ details > p {
   }
 
   #social-media-bar {
-    bottom: 3rem;
+    margin-top: -4rem;
   }
 }
 
@@ -406,7 +410,7 @@ details > p {
   }
 
   #social-media-bar {
-    bottom: 4rem;
+    margin-top: -2rem;
   }
 }
 
@@ -417,10 +421,10 @@ details > p {
   }
 
   #quote {
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
 
   #social-media-bar {
-    bottom: 4rem;
+    margin-top: 0;
   }
 }

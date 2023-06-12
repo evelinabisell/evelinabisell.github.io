@@ -21,4 +21,34 @@ $(document).ready(function () {
             $("#languagePopup").fadeOut();
         }
     });
+
+    // Handle form submissions
+    $('#mail-form').submit(function (event) {
+        event.preventDefault();
+        var form = $(this);
+        var status = $('#form-status');
+        var formData = new FormData(form[0]);
+
+        $.ajax({
+            url: form.attr('action'),
+            type: form.attr('method'),
+            data: formData,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                status.html('Thanks for your message!');
+                form[0].reset();
+            },
+            error: function (xhr, status, error) {
+                var errorMessage = "Oops! There was a problem sending your message";
+                if (xhr.responseJSON && xhr.responseJSON.errors) {
+                    errorMessage = xhr.responseJSON.errors.map(function (error) {
+                        return error.message;
+                    }).join(", ");
+                }
+                status.html(errorMessage);
+            }
+        });
+    });
 });

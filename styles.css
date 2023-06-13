@@ -56,7 +56,8 @@ body {
 }
 
 #portfolio-main {
-  max-width: 75%;
+  width: 75%;
+  max-width: 500px;
   margin: auto;
   margin-top: 1em;
 }

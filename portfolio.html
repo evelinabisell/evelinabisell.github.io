@@ -16,47 +16,39 @@
 
 <body>
 
-  <div class="screen">
 
-    <a id="start"></a>
-    <header>
-      <nav>
-        <a href="home.html#start"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
-        <a href="portfolio.html#start">Portfolio</a>
-        <a href="#contact">Contact</a>
-        <button id="resume">Resume</button>
-      </nav>
-    </header>
 
-    <div class="content">
-      <main>
-        <section>
-          <h2>What I'm up to right now</h2>
-          <article>
-            <h3>Current occupation</h3>
-            <p>Right now I'm living in South Korea on a Working Holiday Visa
-              while looking for work and studying programming online.</p>
-          </article>
-          <article>
-            <h3>Current side project</h3>
-            <p>I'm working on a prototype for a game in Unity.</p>
-          </article>
-        </section>
+  <a id="start"></a>
+  <header>
+    <nav>
+      <a href="home.html#start"><img id="home-icon" src="Images/outline_home_white_24dp.png" alt="Home symbol"></a>
+      <a href="portfolio.html#start">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <button id="resume">Resume</button>
+    </nav>
+  </header>
 
-        <div id="portfolio">
+  <main id="portfolio-main">
 
-        </div>
-      </main>
-
-      <div id="social-media-bar-portfolio">
-        <a href="https://www.linkedin.com/in/evelina-bisell/">
-          <img src="Images/In-White-128@2x.png">
-        </a>
-        <a href="https://github.com/evelinabisell">
-          <img src="Images/github-mark-white.png">
-        </a>
+    <div id="portfolio">
+      <h2>Portfolio</h2>
+      <div id="mail-app">
+        <img src="Images/mail-app-send.png" alt="Image of java mail app" />
+        <br>
+        <a href="https://github.com/evelinabisell/MailApp">GitHub repository</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQatPZGske4EDwIZfa5SjM0K8TC3DdpLLXuIYP8QZEKgb6lGPZ9HutJySmSrbl4qeZLKcG52LewIVWR/pub">Description</a>
       </div>
     </div>
+    
+  </main>
+
+  <div id="social-media-bar-portfolio">
+    <a href="https://www.linkedin.com/in/evelina-bisell/">
+      <img src="Images/In-White-128@2x.png">
+    </a>
+    <a href="https://github.com/evelinabisell">
+      <img src="Images/github-mark-white.png">
+    </a>
   </div>
 
   <div class="popup-overlay" id="languagePopup">
@@ -91,8 +83,8 @@
       <h4>Evelina Bisell &copy; 2023 - ALL RIGHTS RESERVED - </h4>
       <details>
         <summary>CREDITS</summary>
-        <p id="credits">Designed and developed by Evelina Bisell using: Visual Studio Code to write HTML, CSS and
-          JavaScript.<br>
+        <p id="credits">Designed and developed by Evelina Bisell using Visual Studio Code to write HTML, CSS and
+          JavaScript/JQuery.<br>
           Special thanks to Pierre A.I. Wijkman, course manager for the Stockholm University course
           where the development of this site got its start.</p>
       </details>

@@ -52,7 +52,7 @@ body {
 .content {
   max-width: 75%;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 8em;
 }
 
 #portfolio-main {
@@ -149,35 +149,14 @@ nav > a:visited {
 }
 
 /* sections */
-#quote {
-  text-align: center;
-  margin-right: 0;
-  margin-left: 6em;
-  margin-top: 1em;
-  font-family: Caveat;
-  font-weight: 200;
-  font-size: 130%;
-  color: #dadada;
-}
-
-#social-media-bar {
-  position: relative;
-  margin-top: -4em;
-}
-
-#social-media-bar img {
-  margin-right: 0.3em;
-  width: 32px;
-}
-
-#social-media-bar-portfolio {
+.social-media-bar {
   position: fixed;
   right: 0.5em;
   top: 50%;
   transform: translateY(-50%);
 }
 
-#social-media-bar-portfolio img {
+.social-media-bar img {
   display: block;
   margin-top: 0.5em;
   width: 32px;
@@ -430,10 +409,6 @@ details > p {
   }
 
   #social-media-bar img {
-    width: 38px;
-  }
-
-  #social-media-bar-portfolio img {
     width: 34px;
   }
 }
@@ -450,56 +425,6 @@ details > p {
   }
 
   #social-media-bar img {
-    width: 42px;
-  }
-
-  #social-media-bar-portfolio img {
     width: 38px;
-  }
-}
-
-/* Margins for different heights */
-@media only screen and (min-height: 360px) {
-
-  .content {
-    margin-top: 4em;
-  }
-
-  #quote {
-    margin-top: 2em;
-  }
-
-  #social-media-bar {
-    margin-top: -4em;
-  }
-}
-
-@media only screen and (min-height: 500px) {
-
-  .content {
-    margin-top: 8em;
-  }
-
-  #quote {
-    margin-top: 4em;
-  }
-
-  #social-media-bar {
-    margin-top: -3em;
-  }
-}
-
-@media only screen and (min-height: 700px) {
-
-  .content {
-    margin-top: 8em;
-  }
-
-  #quote {
-    margin-top: 12em;
-  }
-
-  #social-media-bar {
-    margin-top: -3em;
   }
 }

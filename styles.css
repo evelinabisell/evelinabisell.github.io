@@ -168,31 +168,24 @@ nav > a:visited {
   margin-bottom: 5em;
 }
 
+#portfolio > div {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-bottom: #e5e5e5 solid 1px;
+}
+
 #portfolio h2{
   font-family: OpenSans;
   font-weight: 200;
   letter-spacing: 0.2em;
   font-size: 1.5em;
+  padding-bottom: 0.5em;
 }
 
-#portfolio img {
-  width: 100%;
-  max-width: 500px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-
-  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.8);
-  opacity: 0.95;
-
-  position: relative;
-  top: 0;
-  transition: top ease 0.1s;
-}
-
-#portfolio img:hover {
-  top: -2px;
-  box-shadow: 0 8px 20px -5px black;
-  opacity: 1;
+#portfolio h3 {
+  display: inline;
+  font-family: monospace, sans-serif;
+  font-weight: 200;
 }
 
 #portfolio a {

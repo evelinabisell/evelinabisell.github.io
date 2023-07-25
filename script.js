@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     // Show English PDF file in a new tab on English button click
     $("#english-button").on("click", function () {
-        window.open("https://evelinabisell.github.io/Resumes/CV_Eng_June_2023.pdf");
+        window.open("https://evelinabisell.github.io/Resumes/CV_Eng_July_2023.pdf");
     });
 
     // Show Swedish PDF file in a new tab on Swedish button click
